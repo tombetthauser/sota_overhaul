@@ -3,7 +3,7 @@ class WordCloud {
     this.title = input.title;
     this.data = input.data;
     this.tag = input.tag;
-    this.margin = input.margin || { top: 20, right: 20, bottom: 20, left: 30 };
+    this.margin = input.margin || { top: 20, right: 20, bottom: 20, left: 0 };
     // this.margin = input.margin || { top: 0, right: 0, bottom: 0, left: 0 };
     this.innerHeight = (input.height - 50) || 400;
     this.innerWidth = (input.width - 50) || 550;
@@ -98,6 +98,7 @@ class WordCloud {
     const thisCloud = document.querySelector(this.tag);
     const parentEle = document.querySelector(this.parent);
     const newTitle = document.createElement("h3");
+    newTitle.classList.add("graph-title");
 
     newTitle.innerHTML = this.title;
     parentEle.insertBefore(newTitle, thisCloud);

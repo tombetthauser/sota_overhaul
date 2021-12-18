@@ -110,9 +110,10 @@ svg {
 /* New WordCloud CSS */
 
 .word-cloud {
-  /* margin-left: -35%; */
+  margin-top: -12.5px;
+  margin-bottom: 100px;
   display: block;
-  margin-left: 0px;
+  margin-left: -10px;
   /* margin-right: auto; */
   width: 100%;
 }

@@ -232,8 +232,8 @@ const RENDER_GRAPHS = () => {
     data: DATA.KEYWORDS,
     multiplier: 3.25,
     minSize: 6,
-    width: 500,
-    height: 1000,
+    width: 400,
+    height: 1200,
   }).render();
 
   new WordCloud({
@@ -422,9 +422,16 @@ const RENDER_GRAPHS = () => {
     title: "Where did you show work?",
     tag: ".graph-gallery-spaces",
     data: DATA.EXHIBITION_SPACES,
-    multiplier: 1.75,
-    minSize: 12,
-    width: 500
+    multiplier: 0.8,
+    minSize: 10,
+    width: 400,
+    height: 425,
+    margin: {
+      top: 0,
+      bottom: 0,
+      left: 200,
+      right: 0
+    }
   }).render();
 
   // ------------------------------- BAR GRAPHS
