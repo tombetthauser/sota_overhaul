@@ -8,6 +8,8 @@ const randColor = () => DATA.COLORS[Math.floor(Math.random() * DATA.COLORS.lengt
 
 const RENDER_GRAPHS = () => {
 
+  // document.querySelector("#loading").style.display = 'none';
+
   // ------------------------------- WORD CLOUDS
 
   new WordCloudMobile({
@@ -956,5 +958,7 @@ const RENDER_GRAPHS = () => {
     data: DATA.FOUND_SURVEY,
     width: 400,
   }).render();
+
+  // document.querySelector("#loading").style.display = 'none';
 
 }

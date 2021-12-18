@@ -98,6 +98,8 @@ class PieChart {
 
     if (thisCloud) {
       thisCloud.style.height = this.height + "px";
+      // const newEle = document.createTextNode(`> ${this.tag} data loaded<br>`);
+      // document.querySelector("#loading-div").appendChild(newEle);
       console.log(this.tag);
     } else {
       console.log(false);

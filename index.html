@@ -23,6 +23,23 @@
     <a href="#">github</a>
   </section>
   
+  <!-- <section id="loading-section"> -->
+    <h3 id="loading">Loading survey data...</h3>
+    <!-- <div id="loading-div"></div>
+  </section> -->
+
+  <!-- <script>
+    let dots = 0;
+    const interval = setInterval(() => {
+        dots = (dots + 1) % 10;
+
+        let dotsStr = "";
+        for (let i = 0; i < dots; i++) dotsStr += ".";
+
+        document.querySelector("#loading").innerHTML = 'Loading' + dotsStr;
+    }, 500)
+  </script> -->
+
   <section id="the-data">
     <!-- <h2>The Data</h2> -->
 
@@ -40,6 +57,28 @@
       <!-- <svg class="graph-keywords-mobile mobile-only"></svg> -->
     <svg class="graph-gallery-spaces word-cloud desktop-only"></svg>
     <svg class="graph-keywords word-cloud desktop-only"></svg>
+    <svg class="graph-buyers word-cloud desktop-only"></svg>
+    <svg class="sale-types-cloud word-cloud desktop-only"></svg>
+    <svg class="sales-mediums-cloud word-cloud desktop-only"></svg>
+    <svg class="graph-sale-platforms word-cloud desktop-only"></svg>
+    <svg class="studio-visitors-cloud word-cloud desktop-only"></svg>
+    <svg class="studio-visit-sources-cloud word-cloud desktop-only"></svg>
+    <svg class="social-media-positives word-cloud desktop-only"></svg>
+    <svg class="social-media-negatives word-cloud desktop-only"></svg>
+    <svg class="art-resources word-cloud desktop-only"></svg>
+    <svg class="studio-space-type word-cloud desktop-only"></svg>
+    <svg class="job-types word-cloud desktop-only"></svg>
+    <svg class="education-level word-cloud desktop-only"></svg>
+    <svg class="past-degrees word-cloud desktop-only"></svg>
+    <svg class="current-school word-cloud desktop-only"></svg>
+    <svg class="cities-neighborhoods-cloud word-cloud desktop-only"></svg>
+    <svg class="previous-city word-cloud desktop-only"></svg>
+    <svg class="city-benefits word-cloud desktop-only"></svg>
+    <svg class="schools-taught-at word-cloud desktop-only"></svg>
+    <svg class="extra-duties word-cloud desktop-only"></svg>
+    <svg class="positive-shoutout word-cloud desktop-only"></svg>
+    <svg class="negative-shoutout word-cloud desktop-only"></svg>
+    <svg class="final-thoughts word-cloud desktop-only"></svg>
     <svg class="graph-orientation pie-chart"></svg>
     <svg class="graph-gender"></svg>
     <svg class="graph-race"></svg>
@@ -63,22 +102,16 @@
     <svg class="graph-grant-count"></svg>
     <svg class="graph-grant-sum"></svg>
     <svg class="graph-selling-priority"></svg>
-    <svg class="graph-buyers word-cloud desktop-only"></svg>
     <!-- <svg class="graph-buyers-mobile mobile-only"></svg> -->
-    <svg class="sale-types-cloud word-cloud desktop-only"></svg>
     <!-- <svg class="sale-types-cloud-mobile mobile-only"></svg> -->
     <svg class="graph-sales-sum"></svg>
-    <svg class="sales-mediums-cloud word-cloud desktop-only"></svg>
     <!-- <svg class="sales-mediums-cloud-mobile mobile-only"></svg> -->
     <svg class="graph-collector-treatment"></svg>
     <svg class="any-online-sales"></svg>
-    <svg class="graph-sale-platforms word-cloud desktop-only"></svg>
     <!-- <svg class="graph-sale-platforms-mobile mobile-only"></svg> -->
     <svg class="graph-visit-priority"></svg>
     <svg class="graph-visit-count"></svg>
-    <svg class="studio-visitors-cloud word-cloud desktop-only"></svg>
     <!-- <svg class="studio-visitors-cloud-mobile mobile-only"></svg> -->
-    <svg class="studio-visit-sources-cloud word-cloud desktop-only"></svg>
     <!-- <svg class="studio-visit-sources-cloud-mobile mobile-only"></svg> -->
     <svg class="graph-social-media-priority"></svg>
     <svg class="graph-facebook-frequency"></svg>
@@ -87,15 +120,11 @@
     <svg class="instagram-more-less"></svg>
     <svg class="graph-paid-social-media"></svg>
     <svg class="social-media-service-rating"></svg>
-    <svg class="social-media-positives word-cloud desktop-only"></svg>
     <!-- <svg class="social-media-positives-mobile mobile-only"></svg> -->
-    <svg class="social-media-negatives word-cloud desktop-only"></svg>
     <!-- <svg class="social-media-negatives-mobile mobile-only"></svg> -->
     <svg class="personal-website"></svg>
     <svg class="personal-website-2016"></svg>
-    <svg class="art-resources word-cloud desktop-only"></svg>
     <!-- <svg class="art-resources-mobile mobile-only"></svg> -->
-    <svg class="studio-space-type word-cloud desktop-only"></svg>
     <!-- <svg class="studio-space-type-mobile mobile-only"></svg> -->
     <svg class="studio-size"></svg>
     <svg class="studio-price"></svg>
@@ -103,48 +132,36 @@
     <svg class="studio-hours"></svg>
     <svg class="job-income"></svg>
     <svg class="job-app-count"></svg>
-    <svg class="job-types word-cloud desktop-only"></svg>
     <!-- <svg class="job-types-mobile mobile-only"></svg> -->
     <svg class="tax-expenses"></svg>
     <svg class="unemployment"></svg>
     <svg class="current-student"></svg>
-    <svg class="education-level word-cloud desktop-only"></svg>
     <!-- <svg class="education-level-mobile mobile-only"></svg> -->
-    <svg class="past-degrees word-cloud desktop-only"></svg>
     <!-- <svg class="past-degrees-mobile mobile-only"></svg> -->
-    <svg class="current-school word-cloud desktop-only"></svg>
     <!-- <svg class="current-school-mobile mobile-only"></svg> -->
     <svg class="student-loans"></svg>
     <svg class="student-loan-payment"></svg>
-    <svg class="cities-neighborhoods-cloud word-cloud desktop-only"></svg>
     <!-- <svg class="cities-neighborhoods-cloud-mobile mobile-only"></svg> -->
-    <svg class="previous-city word-cloud desktop-only"></svg>
     <!-- <svg class="previous-city-mobile mobile-only"></svg> -->
-    <svg class="city-benefits word-cloud desktop-only"></svg>
     <!-- <svg class="city-benefits-mobile mobile-only"></svg> -->
     <svg class="gallery-priority"></svg>
     <svg class="reception-count"></svg>
     <svg class="fair-count"></svg>
     <svg class="opened-galleries"></svg>
     <svg class="closed-galleries"></svg>
-    <svg class="schools-taught-at word-cloud desktop-only"></svg>
     <!-- <svg class="schools-taught-at-mobile mobile-only"></svg> -->
     <svg class="teaching-environment-rating"></svg>
     <svg class="classes-taught-count"></svg>
     <svg class="campuses-taught-count"></svg>
     <svg class="union-member"></svg>
     <svg class="union-benefits"></svg>
-    <svg class="extra-duties word-cloud desktop-only"></svg>
     <!-- <svg class="extra-duties-mobile mobile-only"></svg> -->
     <svg class="extra-duty-pay"></svg>
     <svg class="survey-time"></svg>
     <svg class="art-world-welcome"></svg>
     <svg class="discrimination"></svg>
-    <svg class="positive-shoutout word-cloud desktop-only"></svg>
     <!-- <svg class="positive-shoutout-mobile mobile-only"></svg> -->
-    <svg class="negative-shoutout word-cloud desktop-only"></svg>
     <!-- <svg class="negative-shoutout-mobile mobile-only"></svg> -->
-    <svg class="final-thoughts word-cloud desktop-only"></svg>
     <!-- <svg class="final-thoughts-mobile mobile-only"></svg> -->
     <!-- </ul> -->
   </section>

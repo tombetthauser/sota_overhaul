@@ -108,6 +108,7 @@ class WordCloud {
 
     if (thisCloud) {
       thisCloud.style.height = this.height + "px";
+      // document.querySelector("#loading-div").innerHTML += `> ${this.tag} data loaded<br>`
       console.log(this.tag);
     } else {
       console.log(false);

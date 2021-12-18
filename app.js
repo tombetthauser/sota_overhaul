@@ -56,7 +56,8 @@ const removeBrokenBorder = () => {
 }
 
 
-document.addEventListener('DOMContentLoaded', (_event) => {
+// document.addEventListener('DOMContentLoaded', (_event) => {
+(() => {
 
   document.addEventListener("click", removeBrokenBorder);
 
@@ -107,10 +108,10 @@ document.addEventListener('DOMContentLoaded', (_event) => {
     })
   })
 
-
   linkBorderRemove();
   // linkShow(`welcome`);
   linkBorderAdd(`welcome`);
-
   RENDER_GRAPHS();
-})
+})();
+
+document.querySelector("#loading").style.display = 'none';
