@@ -5,7 +5,7 @@ class BarGraph {
     this.tag = input.tag;
 
     // this.width = input.width || 600;
-    this.width = 360;
+    this.width = 340;
     // this.height = input.height || 450;
     this.height = input.height || 450;
     // this.innerWidth = (input.width - 50) || 550;
@@ -14,7 +14,7 @@ class BarGraph {
     this.innerHeight = (input.height - 50) || this.height;
 
     // this.margin = input.margin || { top: 50, right: 20, bottom: 20, left: 30 };
-    this.margin = input.margin || { top: 0, right: 0, bottom: 0, left: 40 };
+    this.margin = input.margin || { top: 0, right: 0, bottom: 0, left: 30 };
     this.color = input.color || "#000";
     this.angle = input.angle || false;
     this.strokeWidth = input.strokeWidth || 1;
@@ -57,7 +57,7 @@ class BarGraph {
 
     // Deals with visual placement of graph.
     // svg.attr("height", this.height).attr("width", this.width);
-    svg.attr("height", this.height).attr("width", "500px");
+    svg.attr("height", this.height).attr("width", this.width);
 
     // Deals with title text.
     // svg.append("text")
