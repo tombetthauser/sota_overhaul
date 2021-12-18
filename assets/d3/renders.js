@@ -391,7 +391,7 @@ const RENDER_GRAPHS = () => {
   }).render();
 
   new WordCloud({
-    title: "Who visited your studiothis past year?",
+    title: "Who visited your studio this past year?",
     tag: ".studio-visitors-cloud",
     data: DATA.STUDIO_VISITORS,
     multiplier: 2,
@@ -413,7 +413,7 @@ const RENDER_GRAPHS = () => {
     title: "Who did you sell work to?",
     tag: ".graph-buyers",
     data: DATA.BUYERS_CLOUD,
-    multiplier: 1.5,
+    multiplier: 0.75,
     minSize: 12,
     width: 500,
   }).render();
@@ -869,7 +869,7 @@ const RENDER_GRAPHS = () => {
   }).render();
 
   new BarGraph({
-    title: "What is your gender?",
+    title: "What is your chosen gender identity?",
     tag: ".graph-gender",
     data: DATA.GENDER,
     width: 400,
