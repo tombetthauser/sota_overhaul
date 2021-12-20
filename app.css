@@ -68,10 +68,10 @@ li h3 {
     height: 9px;
 }
 .line1 {
-    background: linear-gradient(45deg, transparent 48%, black 48%, transparent 52%);
+    background: linear-gradient(-45deg, transparent 48%, black 48%, transparent 52%);
 }
 .line2 {
-    background: linear-gradient(-45deg, transparent 48%, black 48%, transparent 52%);
+    background: linear-gradient(--45deg, transparent 48%, black 48%, transparent 52%);
 }
 .line {
     background-size: 17px 17px;
@@ -139,4 +139,36 @@ svg {
 
 #loading {
   font-size: 12px;
+}
+
+.studio-space-type, 
+.studio-space-type-mobile,
+.personal-website, 
+.graph-race,
+.discrimination,
+.extra-duty-pay,
+.graph-facebook-frequency,
+.studio-size,
+.graph-residency-priority,
+.graph-social-media-priority,
+.graph-visit-priority,
+.graph-legal-paperwork,
+.graph-instagram-frequency,
+.graph-collector-treatment,
+.studio-price,
+.instagram-more-less,
+.job-income,
+.tax-expenses,
+.graph-grant-sum,
+.art-world-welcome,
+.student-loans,
+.education-level,
+.graph-paid-social-media,
+.graph-selling-priority
+{
+  margin-bottom: 175px;
+}
+
+.graph-sale-platforms {
+  margin-bottom: 65px;
 }

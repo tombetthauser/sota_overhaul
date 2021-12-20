@@ -803,7 +803,7 @@ const DATA = {
     { name: "Rogers Park", value: 1 },
     { name: "Rural", value: 1 },
     { name: "Sacramento", value: 4 },
-    { name: "Same as 2019", value: 8 },
+    { name: "same city", value: 8 },
     { name: "San Francisco", value: 2 },
     { name: "San Jose", value: 1 },
     { name: "Santa Cruz", value: 1 },
@@ -1102,7 +1102,7 @@ const DATA = {
   ],
   
   JOB_TYPES: [
-    { name: "None / full time student", value: 10 },
+    { name: "full time student", value: 10 },
     { name: "Retail", value: 8 },
     { name: "Restaurant work / server", value: 6 },
     { name: "Teaching", value: 5 },
@@ -1523,7 +1523,7 @@ const DATA = {
   
   STUDIO_VISIT_SOURCES: [
     { name: "Other artist peers", value: 30 },
-    { name: "Conversations at openings / receptions", value: 29 },
+    { name: "Conversations at openings", value: 29 },
     { name: "Teachers / faculty", value: 15 },
     { name: "Direct messages on Instagram", value: 12 },
     { name: "BFA / MFA peers", value: 10 },
@@ -2522,3 +2522,24 @@ const DATA = {
     { name: "Universities and Colleges", value: 1 },
   ]
 }
+
+function sortByCount(arrayOfObjects) {
+  // console.log(arrayOfObjects.sort())
+  return arrayOfObjects.sort((a, b) => {
+    return b.value - a.value;
+  }).slice(0, 5)
+}
+
+function sortAll(parentObj) {
+  const newObj = {};
+  for (let key in parentObj) {
+    if (Array.isArray(parentObj[key])) {
+      newObj[key] = sortByCount(parentObj[key]);
+    } else {
+      newObj[key] = parentObj[key];
+    }
+  }
+  return newObj;
+}
+
+console.log(sortAll(DATA));

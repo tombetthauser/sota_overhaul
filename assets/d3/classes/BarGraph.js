@@ -20,6 +20,8 @@ class BarGraph {
     this.strokeWidth = input.strokeWidth || 1;
 
     this.parent = input.parent || "#the-data";
+
+    this.textSize = input.textSize || 10;
   }
 
   render() {
@@ -76,7 +78,7 @@ class BarGraph {
         .attr("transform", "translate(10,0)rotate(30)")
         .style("letter-spacing", "-0.5px")
         .style("text-anchor", "start")
-        .style("font-size", "10px");
+        .style("font-size", this.textSize + "px");
     } else {
       xAxis = g => g
         .attr("transform", `translate(0,${this.innerHeight - this.margin.bottom})`)
